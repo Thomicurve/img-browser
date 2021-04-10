@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&display=swap');
+:root{
+    --backgroundDark: #1D2029;
+    --cardColor : #252B43;
+    --white : #FBFBFB;
+    --googleFont : 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundDark);
+    font-family: var(--googleFont);
+}
+
+.container-images{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.list-images{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-size{
+    width: 400px;
+    padding: 5px;
+    height: 400px;
+    background-color: #ffff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-container{
+
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-color: #1D2029;
+}
+
+.button-cont{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-cont button{
+    width: 30%;
+}
+
+#image-search{
+    height: 320px;
+    width: 450px;
+}
+
+.content-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#button-image{
+    margin: 20px 0px;
+}
+
+
+
+
+@media screen and (max-width: 530px){
+
+    .card-size{
+        width: 300px;
+        padding: 5px;
+        height: 300px;
+        background-color: #ffff;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .image-container{
+
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        background-color: #1D2029;
+    }
+}
