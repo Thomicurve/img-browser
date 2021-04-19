@@ -12,7 +12,7 @@ function ImageList(props) {
                                 <img src={val.largeImageURL} alt={val.tags} className="card-img-top" id="image-search" />
                             </div>
                             <div className="content-card">
-                                <a href={val.pageURL} target="_blank" className="btn btn-primary" id="button-image">See full image</a>
+                                <a href={val.pageURL} rel="noreferrer" target="_blank" className="btn btn-primary" id="button-image">See full image</a>
                             </div>
                         </div>
                     )

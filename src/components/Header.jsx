@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ApiPixabay from './ApiPixabay';
 
 import ImageList from './ImageList.jsx';
@@ -17,12 +17,9 @@ function Header() {
 
         if (imageName.trim("").length === 0) return alert('The form can´t be empty');
         const imagesApi = await ApiPixabay(imageName);
-        await setImages(imagesApi);
+        setImages(imagesApi);
+        setImageName('');
     }
-
-    useEffect(() => {
-        console.log(images);
-    }, [images])
 
     return (
         <div>
@@ -44,7 +41,8 @@ function Header() {
                                             type="text"
                                             className='form-control'
                                             placeholder="any things..."
-                                            onChange={handleSearch} />
+                                            onChange={handleSearch} 
+                                            value={imageName}/>
                                     </div>
                                 </div>
                                 <div className="row my-4 me-auto">
