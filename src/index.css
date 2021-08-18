@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url("./Fonts/Nexa-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Nexa light';
+    src: url("./Fonts/Nexa-Light.otf");
+}
+
+:root{
+    --blue: #2E34A6;
+    --pink: #F2389E;
+    --footer-background: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nexa Bold';
+    overflow-x: hidden;
+}
+
+.blobs {
+    position: absolute;
+    z-index: -1;
+}

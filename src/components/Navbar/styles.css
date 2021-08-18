@@ -1,0 +1,48 @@
+.navbar-container {
+    background-color: var(--blue);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 75%;
+}
+
+.navbar-container ul {
+    list-style:none;
+    display: flex;
+    padding: 0;
+}
+
+.navbar-container a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-family: 'Nexa light';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar-container a[href="#home"] {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.navbar-container a:hover {
+    color: rgb(221, 221, 221);
+}
+
+@media screen and (max-width:600px) {
+    .navbar-container {
+        width: 95%;
+    }
+
+    .navbar-container a {
+        font-size: 12px;
+    }
+    
+    .navbar-container a[href="#home"] {
+        font-size: 13px;
+    }
+}
